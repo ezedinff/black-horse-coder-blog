@@ -1,0 +1,67 @@
+body {
+    background-color: #1a202c;
+}
+#menu-toggle:checked + #menu {
+  display: block;
+}
+li a svg {
+    width: 24px;
+    height: 24px;
+}
+.header {
+    display: flex;
+    color: var(--gray);
+    align-items: center;
+}
+.header::before{
+    content: "";
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 2px;
+    margin: 0 8px;
+    background-color: var(--light-gray);
+}
+.card {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    @apply flex flex-col justify-center items-center shadow-2xl bg-gray-900 h-64;
+}
+.card p {
+    opacity: 0.3;
+}
+.card h3 {
+    opacity: 0.3;
+}
+.card:hover {
+    background-color: var(--brown);
+    cursor: pointer;
+}
+.card:hover p {
+    opacity: 1;
+}
+.card:hover h3 {
+    opacity: 1;
+}
+.social:hover,
+.social:focus{
+    background-color: var(--light-brown);
+}
+.bottom-border:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+
+    width: 30%; /* Change this to whatever width you want. */
+    padding-top: 8px; /* This creates some space between the element and the border. */
+    border-bottom: 8px solid var(--light-brown); /* This creates the border. Replace black with whatever color you want. */
+}
+.button {
+    @apply py-2 px-4;
+}
+.outline {
+    border: 2px solid var(--light-brown);
+    color: var(--light-brown);
+}
+.profile-container {
+    background-color: #1a202c;
+  @apply  text-white ;
+}
