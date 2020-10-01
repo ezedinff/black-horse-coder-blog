@@ -22,9 +22,44 @@ li a svg {
     margin: 0 8px;
     background-color: var(--light-gray);
 }
+.card::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background-color: #fff;
+    filter: blur(20px);
+}
+.card:nth-child(1)::before,
+.card:nth-child(1)::after {
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+.card:nth-child(2)::before,
+.card:nth-child(2)::after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.card:nth-child(3)::before,
+.card:nth-child(3)::after {
+    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
 .card {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    @apply flex flex-col justify-center items-center shadow-2xl bg-gray-900 h-64;
+    @apply relative flex flex-col justify-center items-center shadow-2xl bg-gray-900 h-64;
 }
 .card p {
     opacity: 0.3;

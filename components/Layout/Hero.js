@@ -75,7 +75,7 @@ const Hero = () => {
                     </a>
                   </li>
                   <li className="mx-2">
-                    <a href="#" aria-label="Codepen">
+                    <a href="https://codepen.io/ezedinff" aria-label="Codepen">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"

@@ -68,6 +68,9 @@ export default function Index() {
           </div>
         </div>
       </section>
+      {/* porfolio */}
+      {/* blog */}
+      {/* contact */}
     </Layout>
   );
 }
